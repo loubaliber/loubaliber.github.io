@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Experience page
+   ========================================================================== */
+
+.experience-timeline {
+  padding-top: var(--space-6);
+}
+
+.timeline-lg .timeline-item h3 {
+  font-size: var(--fs-lg);
+}
+
+.timeline-lg .org {
+  max-width: 60ch;
+}
+
+.affil-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.affil-grid h3 {
+  font-size: var(--fs-base);
+  margin-bottom: var(--space-4);
+}
+
+.plain-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.plain-list li {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  padding-left: var(--space-4);
+  position: relative;
+  line-height: var(--lh-snug);
+}
+
+.plain-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--channel-cyan);
+}
+
+@media (max-width: 860px) {
+  .affil-grid {
+    grid-template-columns: 1fr;
+  }
+}

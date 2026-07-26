@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Lourenz Baliber</title>
+  <meta name="description" content="Machine learning pipelines, physics simulations, and applied computer vision projects by Lourenz O. Baliber." />
+  <link rel="canonical" href="https://lourenzbaliber.dev/projects.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects — Lourenz Baliber" />
+  <meta property="og:url" content="https://lourenzbaliber.dev/projects.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0e13" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/inner.css" />
+  <link rel="stylesheet" href="css/pages/projects.css" />
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><span class="loader-mark"></span></div>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>L. Baliber</a>
+      <button class="nav-toggle icon-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="search-trigger" data-cmdk-open aria-label="Open search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span><kbd>⌘K</kbd>
+        </button>
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <a class="nav-cta" href="assets/Baliber_Resume.pdf" download>Résumé</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Projects</p>
+        <h1 data-reveal>Six builds, two disciplines.</h1>
+        <p class="page-lede" data-reveal>
+          From end-to-end ML products deployed for real users, to from-scratch numerical physics
+          simulations, to image-analysis tooling built for the microscope bench.
+        </p>
+
+        <div class="filter-row" data-reveal role="group" aria-label="Filter projects by category">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="ml" aria-pressed="false">ML &amp; Data Science</button>
+          <button class="filter-btn" data-filter="sim" aria-pressed="false">Simulation &amp; Physics</button>
+          <button class="filter-btn" data-filter="cv" aria-pressed="false">Computer Vision</button>
+          <button class="filter-btn" data-filter="web" aria-pressed="false">Deployed / Web</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-list">
+      <div class="container">
+
+        <article class="project-full" id="stroke-detection" data-category="ml web">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-stroke"/></svg></div>
+          <div class="project-full-body">
+            <span class="timeline-date">2024</span>
+            <h2>Stroke Detection System</h2>
+            <p class="text-secondary">End-to-end machine learning pipeline, built from exploratory data analysis through web deployment, on a dataset of 5,000+ patient records. Deployed as an interactive Flask + Streamlit web application, enabling real-time stroke-risk prediction with a visual feature-importance breakdown for each prediction.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Flask</span><span class="tag">Streamlit</span><span class="tag">Pandas</span>
+            </div>
+            <div class="project-full-links">
+              <a class="btn btn-sm btn-primary" href="https://github.com/fitaness12345/Stroke-Dataset-Prediction" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.18v3.23c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-full" id="satellite-simulator" data-category="sim">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-orbit"/></svg></div>
+          <div class="project-full-body">
+            <span class="timeline-date">2025</span>
+            <h2>Satellite Launch &amp; Orbit Simulator</h2>
+            <p class="text-secondary">A 2D physics simulation modeling a satellite's trajectory from launch through orbital insertion at low Earth orbit. Solves the equations of motion via custom Runge-Kutta 4th-order (RK4) integration under gravitational and atmospheric drag forces, accounting for fuel consumption and mass loss. Trajectory, velocity, and altitude profiles are visualized in real time with Matplotlib animation and validated against analytical orbital-mechanics solutions.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Custom RK4 integrator</span><span class="tag">Matplotlib animation</span>
+            </div>
+            <p class="text-secondary project-note">Repository link forthcoming — reach out on <a href="contact.html">Contact</a> for a walkthrough in the meantime.</p>
+          </div>
+        </article>
+
+        <article class="project-full" id="balibot" data-category="web">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-bot"/></svg></div>
+          <div class="project-full-body">
+            <span class="timeline-date">2023</span>
+            <h2>Balibot</h2>
+            <p class="text-secondary">A Discord bot developed and deployed with discord.py, serving 200+ users across 5+ servers. Features automated moderation, slash commands, and third-party API integrations, with 96.3% measured uptime over six months in production.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">discord.py</span><span class="tag">REST APIs</span>
+            </div>
+            <div class="project-full-links">
+              <a class="btn btn-sm btn-primary" href="https://github.com/fitaness12345/balibot" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.18v3.23c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-full" id="hydrogel-analysis" data-category="cv sim">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-hydrogel"/></svg></div>
+          <div class="project-full-body">
+            <span class="timeline-date">2024 – 2026</span>
+            <h2>Hydrogel Image Analysis</h2>
+            <p class="text-secondary">Image-analysis tooling built alongside MSc thesis work on mixed carrageenan hydrogel systems — processing fluorescence microscopy frames to quantify network structure and correlate structural heterogeneity with particle dynamics across dozens of samples.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">OpenCV</span><span class="tag">Mathematica</span>
+            </div>
+            <p class="text-secondary project-note">Grew out of thesis research — see <a href="research.html">Research</a> for the underlying methodology.</p>
+          </div>
+        </article>
+
+        <article class="project-full" id="particle-toolkit" data-category="cv sim">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-particle"/></svg></div>
+          <div class="project-full-body">
+            <span class="timeline-date">2024 – 2026</span>
+            <h2>Particle Tracking Toolkit</h2>
+            <p class="text-secondary">A set of Python/MATLAB utilities for passive particle tracking: extracting mean-squared displacement (MSD) and viscoelastic moduli from tracer-bead trajectories recorded on the microrheology bench — the same pipeline behind the hero animation on this site's homepage.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">MSD analysis</span><span class="tag">Passive microrheology</span>
+            </div>
+            <p class="text-secondary project-note">Repository link forthcoming — reach out on <a href="contact.html">Contact</a> for a walkthrough in the meantime.</p>
+          </div>
+        </article>
+
+        <article class="project-full" id="gesture-music" data-category="cv">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-gesture"/></svg></div>
+          <div class="project-full-body">
+            <span class="timeline-date">2023</span>
+            <h2>Gesture-Controlled Music Engine</h2>
+            <p class="text-secondary">A computer-vision side project mapping real-time hand-gesture recognition to audio parameters — pitch, tempo, and filter sweeps controlled by hand position and motion, captured through a webcam feed.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Real-time CV</span>
+            </div>
+            <p class="text-secondary project-note">Repository link forthcoming — reach out on <a href="contact.html">Contact</a> for a walkthrough in the meantime.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand"><span class="dot"></span>L. Baliber</a>
+          <p>Data scientist and physics researcher based in Cebu City, Philippines. Currently an exchange researcher at Tokyo University of Marine Science and Technology.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul><li><a href="experience.html">Experience</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="assets/Baliber_Resume.pdf" download>Résumé (PDF)</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Elsewhere</h4>
+          <ul><li><a href="https://github.com/fitaness12345" target="_blank" rel="noopener">GitHub</a></li><li><a href="mailto:lbaliber0828@gmail.com">Email</a></li><li><a href="contact.html">LinkedIn / Scholar / ORCID</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Lourenz O. Baliber. Built with HTML, CSS &amp; vanilla JS.</span>
+        <span>Cebu City, Philippines</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <div class="cmdk-overlay" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="cmdk-panel">
+      <div class="cmdk-input-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search pages, projects…" aria-label="Search" />
+        <kbd>Esc</kbd>
+      </div>
+      <div class="cmdk-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/projects-filter.js" defer></script>
+</body>
+</html>

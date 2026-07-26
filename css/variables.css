@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Design Tokens
+   Palette is drawn from darkfield fluorescence microscopy: a near-black
+   field, an FITC-green tracer (the actual fluorophore used in Lourenz's
+   MSc thesis), and a cyan second channel — the same two-channel look used
+   to visualize labeled particles in the confocal images this site's
+   content is about.
+   ========================================================================== */
+
+:root {
+  /* ---- Color: dark (default) ---- */
+  --bg: #0a0e13;
+  --bg-elevated: #10161d;
+  --bg-elevated-2: #161e27;
+  --border: #212a34;
+  --border-strong: #2e3a46;
+
+  --text-primary: #e9eef3;
+  --text-secondary: #9fadba;
+  --text-tertiary: #647180;
+
+  --accent: #c7ff4d;          /* FITC emission green — signature */
+  --accent-dim: #91b93a;
+  --accent-ink: #0a0e13;      /* text-on-accent */
+  --channel-cyan: #4dd9ff;    /* second fluorescence channel */
+  --channel-magenta: #ff6ec7; /* rare third-channel highlight, used sparingly */
+
+  --danger: #ff6b6b;
+
+  /* ---- Color: light ---- */
+  --bg-light: #f7f8f6;
+  --bg-elevated-light: #ffffff;
+  --bg-elevated-2-light: #eef1ec;
+  --border-light: #dde2dd;
+  --border-strong-light: #c7cec7;
+  --text-primary-light: #12181d;
+  --text-secondary-light: #4b5760;
+  --text-tertiary-light: #7c8791;
+  --accent-light: #5c8a00;
+  --accent-dim-light: #46690a;
+  --channel-cyan-light: #0088a8;
+
+  /* ---- Type ---- */
+  --font-display: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --fs-xs: clamp(0.72rem, 0.7rem + 0.1vw, 0.78rem);
+  --fs-sm: clamp(0.84rem, 0.8rem + 0.15vw, 0.92rem);
+  --fs-base: clamp(0.98rem, 0.94rem + 0.2vw, 1.06rem);
+  --fs-md: clamp(1.15rem, 1.05rem + 0.4vw, 1.35rem);
+  --fs-lg: clamp(1.4rem, 1.2rem + 0.9vw, 1.9rem);
+  --fs-xl: clamp(2rem, 1.6rem + 1.8vw, 3.1rem);
+  --fs-2xl: clamp(2.6rem, 1.9rem + 3.2vw, 4.6rem);
+
+  --lh-tight: 1.1;
+  --lh-snug: 1.35;
+  --lh-normal: 1.6;
+
+  /* ---- Space ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  /* ---- Layout ---- */
+  --container-w: 1180px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --nav-h: 64px;
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 150ms;
+  --dur-base: 280ms;
+  --dur-slow: 560ms;
+
+  /* ---- Shadow / glass ---- */
+  --glass-blur: 14px;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='light'] {
+  --bg: var(--bg-light);
+  --bg-elevated: var(--bg-elevated-light);
+  --bg-elevated-2: var(--bg-elevated-2-light);
+  --border: var(--border-light);
+  --border-strong: var(--border-strong-light);
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --text-tertiary: var(--text-tertiary-light);
+  --accent: var(--accent-light);
+  --accent-dim: var(--accent-dim-light);
+  --accent-ink: #ffffff;
+  --channel-cyan: var(--channel-cyan-light);
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 8px 24px rgba(20, 30, 20, 0.08);
+}

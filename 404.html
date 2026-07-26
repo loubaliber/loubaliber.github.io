@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Lourenz Baliber</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <style>
+    .error-shell {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-6);
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      color: var(--accent);
+      font-size: var(--fs-sm);
+      letter-spacing: 0.1em;
+      margin-bottom: var(--space-4);
+    }
+    .error-shell h1 {
+      font-size: var(--fs-xl);
+      max-width: 18ch;
+      margin-bottom: var(--space-4);
+    }
+    .error-shell p {
+      color: var(--text-secondary);
+      max-width: 46ch;
+      margin-bottom: var(--space-6);
+    }
+  </style>
+</head>
+<body>
+  <div class="error-shell">
+    <p class="error-code">ERROR · TRAJECTORY LOST</p>
+    <h1>This particle wandered off the tracked path.</h1>
+    <p>The page you're looking for doesn't exist, or the link is out of date. Let's get you back on track.</p>
+    <a class="btn btn-primary" href="index.html">Back to home</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lourenz Baliber — Data Scientist &amp; Computational Biophysicist</title>
+  <meta name="description" content="Portfolio of Lourenz O. Baliber, MSc — data scientist and physics researcher working across machine learning pipelines, particle-tracking microrheology, and scientific computing." />
+  <link rel="canonical" href="https://lourenzbaliber.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lourenz Baliber — Data Scientist & Computational Biophysicist" />
+  <meta property="og:description" content="ML pipelines, particle-tracking microrheology, and scientific computing — portfolio and research notes." />
+  <meta property="og:url" content="https://lourenzbaliber.dev/" />
+  <meta property="og:image" content="https://lourenzbaliber.dev/images/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0e13" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lourenz O. Baliber",
+    "jobTitle": "Data Scientist & Computational Biophysicist",
+    "url": "https://lourenzbaliber.dev/",
+    "sameAs": [
+      "https://github.com/fitaness12345"
+    ],
+    "alumniOf": "University of San Carlos"
+  }
+  </script>
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><span class="loader-mark"></span></div>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>L. Baliber</a>
+
+      <button class="nav-toggle icon-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-trigger" data-cmdk-open aria-label="Open search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span><kbd>⌘K</kbd>
+        </button>
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <a class="nav-cta" href="assets/Baliber_Resume.pdf" download>Résumé</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <canvas id="particle-field" aria-hidden="true"></canvas>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow" data-reveal>Cebu City, PH — DOST ASTHRDP Scholar, MSc Physics</p>
+        <h1 data-reveal>Lourenz Baliber</h1>
+        <p class="hero-role mono" data-reveal>
+          <span data-typing>Data Scientist</span><span class="blink-cursor"></span>
+        </p>
+        <p class="hero-lede" data-reveal>
+          I build machine-learning pipelines and track particles for a living — sometimes literally.
+          My work sits between applied data science and soft-matter biophysics: predictive models
+          deployed for real users, and passive microrheology on hydrogel networks under fluorescence
+          microscopy.
+        </p>
+        <div class="hero-cta" data-reveal>
+          <a class="btn btn-primary" href="projects.html">View projects</a>
+          <a class="btn btn-ghost" href="blog.html">Read the blog</a>
+          <a class="btn btn-ghost" href="assets/Baliber_Resume.pdf" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download résumé
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-row" data-reveal-group>
+          <div class="stat">
+            <div class="stat-num"><span data-count-to="500" data-count-suffix="+" class="accent">0</span></div>
+            <div class="stat-label">Users served by deployed apps</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count-to="8000" data-count-suffix="+" class="accent">0</span></div>
+            <div class="stat-label">Data points, MSc hydrogel study</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count-to="3" class="accent">0</span></div>
+            <div class="stat-label">Conference proceedings published</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span data-count-to="96" data-count-suffix=".3%" class="accent">0</span></div>
+            <div class="stat-label">Uptime, Balibot over 6 months</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg class="trajectory-divider" viewBox="0 0 1180 32" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,16 C 200,4 300,28 500,16 S 800,4 1180,16" />
+      <circle cx="500" cy="16" r="3"/>
+    </svg>
+
+    <!-- ===================== FEATURED PROJECTS ===================== -->
+    <section class="featured-projects">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Selected work</p>
+          <h2>Applied ML, deployed — and simulated physics, visualized.</h2>
+          <p>A mix of end-to-end machine-learning products and from-scratch numerical simulations.</p>
+        </div>
+
+        <div class="project-grid" data-reveal-group>
+          <article class="card project-card hover-lift">
+            <div class="project-thumb" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-stroke"/></svg>
+            </div>
+            <div class="tag-row"><span class="tag">Flask</span><span class="tag">Streamlit</span><span class="tag">Scikit-learn</span></div>
+            <h3>Stroke Detection System</h3>
+            <p class="text-secondary">End-to-end ML pipeline from EDA to deployment on 5,000+ patient records, with real-time risk prediction and feature-importance output.</p>
+            <a class="btn btn-sm btn-ghost" href="projects.html#stroke-detection">View project →</a>
+          </article>
+
+          <article class="card project-card hover-lift">
+            <div class="project-thumb" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-orbit"/></svg>
+            </div>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">RK4</span><span class="tag">Matplotlib</span></div>
+            <h3>Satellite Launch &amp; Orbit Simulator</h3>
+            <p class="text-secondary">2D physics model of a satellite's trajectory to LEO, solving equations of motion under gravity and drag via custom RK4 integration.</p>
+            <a class="btn btn-sm btn-ghost" href="projects.html#satellite-simulator">View project →</a>
+          </article>
+
+          <article class="card project-card hover-lift">
+            <div class="project-thumb" aria-hidden="true">
+              <svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-bot"/></svg>
+            </div>
+            <div class="tag-row"><span class="tag">discord.py</span><span class="tag">REST APIs</span></div>
+            <h3>Balibot</h3>
+            <p class="text-secondary">Discord bot serving 200+ users across 5+ servers — moderation, slash commands, API integrations, 96.3% uptime.</p>
+            <a class="btn btn-sm btn-ghost" href="projects.html#balibot">View project →</a>
+          </article>
+        </div>
+
+        <div class="section-foot" data-reveal>
+          <a class="btn btn-ghost" href="projects.html">See all projects</a>
+        </div>
+      </div>
+    </section>
+
+    <svg class="trajectory-divider" viewBox="0 0 1180 32" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,18 C 250,30 350,2 600,18 S 900,30 1180,18" />
+      <circle cx="680" cy="15" r="3"/>
+    </svg>
+
+    <!-- ===================== BLOG TEASER ===================== -->
+    <section class="blog-teaser">
+      <div class="container">
+        <div class="glass-panel blog-teaser-panel" data-reveal>
+          <div>
+            <p class="eyebrow">Notes</p>
+            <h2>Writing on ML pipelines, soft-matter physics, and scientific computing.</h2>
+            <p class="text-secondary">The blog runs on a markdown-based static system — new posts land soon on particle tracking, hydrogel gelation kinetics, and applied ML notebooks.</p>
+          </div>
+          <a class="btn btn-primary" href="blog.html">Visit the blog</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand"><span class="dot"></span>L. Baliber</a>
+          <p>Data scientist and physics researcher based in Cebu City, Philippines. Currently an exchange researcher at Tokyo University of Marine Science and Technology.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="assets/Baliber_Resume.pdf" download>Résumé (PDF)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://github.com/fitaness12345" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="mailto:lbaliber0828@gmail.com">Email</a></li>
+            <li><a href="contact.html">LinkedIn / Scholar / ORCID</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Lourenz O. Baliber. Built with HTML, CSS &amp; vanilla JS.</span>
+        <span>Cebu City, Philippines</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <!-- Command palette -->
+  <div class="cmdk-overlay" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="cmdk-panel">
+      <div class="cmdk-input-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search pages, projects…" aria-label="Search" />
+        <kbd>Esc</kbd>
+      </div>
+      <div class="cmdk-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/particles.js" defer></script>
+  <script src="js/typing.js" defer></script>
+  <script src="js/stats.js" defer></script>
+</body>
+</html>

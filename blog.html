@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Lourenz Baliber</title>
+  <meta name="description" content="Notes on machine learning, biophysics, and scientific computing — launching soon." />
+  <link rel="canonical" href="https://lourenzbaliber.dev/blog.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0a0e13" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/inner.css" />
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><span class="loader-mark"></span></div>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><span class="dot"></span>L. Baliber</a>
+      <button class="nav-toggle icon-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="search-trigger" data-cmdk-open aria-label="Open search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span><kbd>⌘K</kbd>
+        </button>
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <a class="nav-cta" href="assets/Baliber_Resume.pdf" download>Résumé</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header blog-stub">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Blog</p>
+        <h1 data-reveal>Writing is queued up — the markdown pipeline isn't wired in yet.</h1>
+        <p class="page-lede" data-reveal>
+          This page will list posts pulled automatically from <code class="mono">/posts/*.md</code>,
+          with search, tags, reading time, and an RSS feed. That build is the next phase for this
+          site. In the meantime, drop a note through <a href="contact.html">Contact</a> if there's
+          a topic — particle tracking, gelation kinetics, applied ML — you'd want covered first.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand"><span class="dot"></span>L. Baliber</a>
+          <p>Data scientist and physics researcher based in Cebu City, Philippines. Currently an exchange researcher at Tokyo University of Marine Science and Technology.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul><li><a href="experience.html">Experience</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="assets/Baliber_Resume.pdf" download>Résumé (PDF)</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Elsewhere</h4>
+          <ul><li><a href="https://github.com/fitaness12345" target="_blank" rel="noopener">GitHub</a></li><li><a href="mailto:lbaliber0828@gmail.com">Email</a></li><li><a href="contact.html">LinkedIn / Scholar / ORCID</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Lourenz O. Baliber. Built with HTML, CSS &amp; vanilla JS.</span>
+        <span>Cebu City, Philippines</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cmdk-overlay" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="cmdk-panel">
+      <div class="cmdk-input-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search pages, projects…" aria-label="Search" />
+        <kbd>Esc</kbd>
+      </div>
+      <div class="cmdk-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

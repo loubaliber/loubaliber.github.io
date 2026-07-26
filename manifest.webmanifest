@@ -1,0 +1,18 @@
+{
+  "name": "Lourenz Baliber — Portfolio",
+  "short_name": "L. Baliber",
+  "description": "Data scientist and computational biophysicist — portfolio and research notes.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#0a0e13",
+  "theme_color": "#0a0e13",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
