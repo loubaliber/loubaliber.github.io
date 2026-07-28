@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog — Lourenz Baliber</title>
-  <meta name="description" content="Notes on machine learning, biophysics, and scientific computing — launching soon." />
+  <meta name="description" content="Writing by Lourenz O. Baliber — poems, notes on machine learning, biophysics, and scientific computing." />
   <link rel="canonical" href="https://lourenzbaliber.dev/blog.html" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/pages/inner.css" />
+  <link rel="stylesheet" href="css/pages/blog.css" />
 </head>
 <body>
   <div class="page-loader" aria-hidden="true"><span class="loader-mark"></span></div>
@@ -56,16 +57,37 @@
   </header>
 
   <main id="main">
-    <section class="page-header blog-stub">
+    <section class="page-header">
       <div class="container">
         <p class="eyebrow" data-reveal>Blog</p>
-        <h1 data-reveal>Writing is queued up — the markdown pipeline isn't wired in yet.</h1>
+        <h1 data-reveal>Poems, notes, and the occasional technical write-up.</h1>
         <p class="page-lede" data-reveal>
-          This page will list posts pulled automatically from <code class="mono">/posts/*.md</code>,
-          with search, tags, reading time, and an RSS feed. That build is the next phase for this
-          site. In the meantime, drop a note through <a href="contact.html">Contact</a> if there's
-          a topic — particle tracking, gelation kinetics, applied ML — you'd want covered first.
+          A mix of creative writing and science — older pieces live on
+          <a href="https://thediaristprojects.wordpress.com/" target="_blank" rel="noopener">The Diarist Projects</a>;
+          new technical posts will land here once the markdown pipeline is wired in.
         </p>
+      </div>
+    </section>
+
+    <section class="blog-list">
+      <div class="container">
+
+        <article class="card blog-card" data-reveal>
+          <span class="tag tag-accent">2019</span>
+          <h2><a href="https://thediaristprojects.wordpress.com/2019/09/16/tinnitus/" target="_blank" rel="noopener">Tinnitus</a></h2>
+          <p class="blog-meta">The Diarist Projects · 16 Sep 2019 · Poem</p>
+          <p class="blog-excerpt">“How can silence be so loud? Despair and the hollowness of my soul is breaking me.”</p>
+          <div class="blog-actions">
+            <a class="btn btn-sm btn-primary" href="https://thediaristprojects.wordpress.com/2019/09/16/tinnitus/" target="_blank" rel="noopener">Read on The Diarist Projects</a>
+          </div>
+        </article>
+
+        <p class="blog-note" data-reveal>
+          More posts will be pulled automatically from <code class="mono">/posts/*.md</code> once the
+          static build is in place — with search, tags, reading time, and an RSS feed. Drop a note
+          through <a href="contact.html">Contact</a> if there's a topic you'd want covered first.
+        </p>
+
       </div>
     </section>
   </main>

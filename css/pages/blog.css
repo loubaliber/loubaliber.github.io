@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Blog page
+   ========================================================================== */
+
+.blog-list {
+  padding-top: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.blog-card h2 {
+  font-size: var(--fs-md);
+  margin: var(--space-4) 0 var(--space-3);
+  max-width: 62ch;
+  line-height: var(--lh-snug);
+}
+
+.blog-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blog-card h2 a:hover {
+  color: var(--accent);
+}
+
+.blog-meta {
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-4);
+}
+
+.blog-excerpt {
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  font-style: italic;
+  margin-bottom: var(--space-5);
+  max-width: 62ch;
+}
+
+.blog-actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.blog-note {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-10);
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+  max-width: 68ch;
+}
+
+.blog-note code {
+  font-size: 0.92em;
+}
