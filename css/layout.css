@@ -9,10 +9,18 @@
   height: var(--nav-h);
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Glass effect on a pseudo-element so fixed mobile nav stays viewport-relative */
+.site-nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: color-mix(in srgb, var(--bg) 78%, transparent);
   backdrop-filter: blur(var(--glass-blur)) saturate(140%);
   -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
-  border-bottom: 1px solid var(--border);
 }
 
 .site-nav .container {
@@ -139,6 +147,7 @@
   .nav-links {
     position: fixed;
     inset: var(--nav-h) 0 0 0;
+    z-index: 99;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
@@ -147,14 +156,19 @@
     padding: var(--space-5) var(--space-6);
     transform: translateY(-8px);
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    transition: opacity var(--dur-base) var(--ease), transform var(--dur-base) var(--ease);
+    transition:
+      opacity var(--dur-base) var(--ease),
+      transform var(--dur-base) var(--ease),
+      visibility var(--dur-base) var(--ease);
     overflow-y: auto;
   }
 
   .nav-links.is-open {
     opacity: 1;
     transform: translateY(0);
+    visibility: visible;
     pointer-events: auto;
   }
 
