@@ -6,7 +6,7 @@ type: Note
 excerpt: This complete unification of the forces also known as “The Theory of Everything" challenged physicist up until this very day. But, how do these forces really coexist?
 ---
 
-# On the Incompatibility of Theory of Relativity and Quantum Mechanics
+## On the Incompatibility of Theory of Relativity and Quantum Mechanics
 
 The study of nature and the phenomena called “Physics” was an extensive, rigorous and
 optimistic attempt of understanding the intricacies of our origin. Long before the emergence of Physics, ancient philosophers were among the pioneers of science and are first to propose conjectural postulations governing nature. Before Newton unified the laws of motion, Galileo Galilei’s observations gave rise to the basis of mechanics and dynamics of heavenly bodies which further prompted the beginning of the theory of relativity expanded by Albert Einstein. After a century of innovation and research, a myriad of theories emerged attempting to unify the four fundamental forces in physics — gravity, electromagnetism, weak force, and the strong force. This complete unification of the forces also known as “The Theory of Everything” challenged physicist up until this very day. But, how do these forces really coexist? 
