@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Lourenz Baliber — Blog</title>
+    <link>https://lourenzbaliber.dev/blog.html</link>
+    <description>Notes on machine learning, biophysics, and scientific computing.</description>
+    <language>en-us</language>
+    
+    <item>
+      <title>On the Incompatibility of Theory of Relativity and Quantum Mechanics</title>
+      <link>https://lourenzbaliber.dev/blog/relativity-and-qm.html</link>
+      <guid>https://lourenzbaliber.dev/blog/relativity-and-qm.html</guid>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+      <description>This complete unification of the forces also known as “The Theory of Everything&quot; challenged physicist up until this very day. But, how do these forces really coexist?</description>
+    </item>
+
+    <item>
+      <title>Welcome to the blog</title>
+      <link>https://lourenzbaliber.dev/blog/welcome-to-the-blog.html</link>
+      <guid>https://lourenzbaliber.dev/blog/welcome-to-the-blog.html</guid>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+      <description>How this site handles posts — write in Markdown, run one command, and publish.</description>
+    </item>
+  </channel>
+</rss>

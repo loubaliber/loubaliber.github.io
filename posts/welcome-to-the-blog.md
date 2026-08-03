@@ -42,4 +42,4 @@ External posts (like older pieces on The Diarist Projects) can set `external: tr
 
 ## What's next
 
-Technical write-ups on particle tracking, hydrogel kinetics, and applied ML notebooks are in the queue. If there's a topic you'd like covered first, [get in touch](/contact.html).
+If there's a topic you'd like covered first, [get in touch](/contact.html).
