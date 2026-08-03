@@ -143,7 +143,7 @@
     { label: 'Stroke Detection System', hint: 'Project — end-to-end ML pipeline', href: 'projects.html#stroke-detection' },
     { label: 'Satellite Launch & Orbit Simulator', hint: 'Project — orbital mechanics', href: 'projects.html#satellite-simulator' },
     { label: 'Balibot', hint: 'Project — Discord bot', href: 'projects.html#balibot' },
-    { label: 'GitHub', hint: 'github.com/fitaness12345', href: 'https://github.com/fitaness12345' },
+    { label: 'GitHub', hint: 'github.com/loubaliber', href: 'https://github.com/loubaliber' },
   ];
 
   function initCommandPalette() {
