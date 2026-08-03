@@ -57,7 +57,9 @@
 .post-card {
   display: flex;
   flex-direction: column;
-  transition: transform var(--dur-base) var(--ease), border-color var(--dur-base) var(--ease);
+  transition:
+    transform var(--dur-base) var(--ease),
+    border-color var(--dur-base) var(--ease);
 }
 
 .post-card:hover {

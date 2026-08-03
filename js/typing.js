@@ -12,8 +12,7 @@
 
   const roles = [
     'Data Scientist',
-    'ML Engineer',
-    'Computational Biophysicist',
+    'Soft Matter & Polymer Science',
     'Researcher',
   ];
 
