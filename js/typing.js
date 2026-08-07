@@ -11,7 +11,7 @@
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const roles = [
-    'Data Scientist',
+    'Data Science',
     'Soft Matter & Polymer Science',
     'Researcher',
   ];
