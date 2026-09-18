@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Lourenz Baliber</title>
   <meta name="description" content="Machine learning pipelines, physics simulations, and applied computer vision projects by Lourenz O. Baliber." />
-  <link rel="canonical" href="https://lourenzbaliber.dev/projects.html" />
+  <link rel="canonical" href="https://loubaliber.github.io/projects.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Projects — Lourenz Baliber" />
-  <meta property="og:url" content="https://lourenzbaliber.dev/projects.html" />
+  <meta property="og:url" content="https://loubaliber.github.io/projects.html" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#0a0e13" />
@@ -80,6 +80,45 @@
 
     <section class="project-list">
       <div class="container">
+
+        <article class="project-full" id="stroke-detection" data-category="ml web">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-stroke"/></svg></div>
+          <div class="project-full-body">
+            <h2>Stroke Detection System</h2>
+            <p class="text-secondary">A complete stroke detection system built from exploratory analysis through to web deployment on a dataset of 5,000+ patient records. Deployed with Flask and Streamlit for real-time risk prediction with visual feature-importance output.</p>
+            <div class="tag-row">
+              <span class="tag">Flask</span><span class="tag">Streamlit</span><span class="tag">Scikit-learn</span>
+            </div>
+            <div class="project-full-links">
+              <a class="btn btn-sm btn-primary" href="https://github.com/fitaness12345/Stroke-Dataset-Prediction" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.18v3.23c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+                Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-full" id="satellite-simulator" data-category="sim">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-orbit"/></svg></div>
+          <div class="project-full-body">
+            <h2>Satellite Launch &amp; Orbit Simulator</h2>
+            <p class="text-secondary">A 2D physics simulation modeling a satellite's trajectory from launch to orbital insertion at LEO, solving the equations of motion via custom RK4 integration under gravitational and atmospheric drag forces while accounting for fuel consumption and mass loss. Trajectory, velocity, and altitude profiles are visualized in real time and validated against analytical orbital mechanics solutions.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">RK4</span><span class="tag">Matplotlib</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-full" id="balibot" data-category="web">
+          <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-bot"/></svg></div>
+          <div class="project-full-body">
+            <h2>Balibot</h2>
+            <p class="text-secondary">A Discord bot built with discord.py serving 200+ users across 5+ servers — automated moderation, slash commands, and API integrations, with 96.3% uptime over six months.</p>
+            <div class="tag-row">
+              <span class="tag">discord.py</span><span class="tag">REST APIs</span><span class="tag">Python</span>
+            </div>
+          </div>
+        </article>
 
         <article class="project-full" id="cg-polymer-md" data-category="sim">
           <div class="project-full-media" aria-hidden="true"><svg viewBox="0 0 200 120"><use href="images/covers.svg#cover-orbit"/></svg></div>
@@ -192,7 +231,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-brand"><span class="dot"></span>L. Baliber</a>
-          <p>Data scientist and physics researcher based in Cebu City, Philippines. Currently an exchange researcher at Tokyo University of Marine Science and Technology.</p>
+          <p>Biophysics researcher and data scientist based in Cebu City, Philippines. Currently a data science intern at OpsWerks.</p>
         </div>
         <div class="footer-col">
           <h4>Site</h4>

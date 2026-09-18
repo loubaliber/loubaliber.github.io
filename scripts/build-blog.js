@@ -10,7 +10,7 @@ const POSTS_DIR = path.join(ROOT, 'posts');
 const BLOG_OUT_DIR = path.join(ROOT, 'blog');
 const BLOG_INDEX_FILE = path.join(ROOT, 'blog.html');
 const RSS_FILE = path.join(ROOT, 'feed.xml');
-const SITE_URL = 'https://lourenzbaliber.dev'; // update once the real domain is live
+const SITE_URL = 'https://loubaliber.github.io'; // update once the real domain is live
 const SITE_TITLE = 'Lourenz Baliber — Blog';
 const SITE_DESC = 'Notes on machine learning, biophysics, and scientific computing.';
 const WORDS_PER_MINUTE = 200;
@@ -388,7 +388,7 @@ function siteFooter(depth) {
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="${p}index.html" class="nav-brand"><span class="dot"></span>L. Baliber</a>
-          <p>Data scientist and physics researcher based in Cebu City, Philippines. Currently an exchange researcher at Tokyo University of Marine Science and Technology.</p>
+          <p>Biophysics researcher and data scientist based in Cebu City, Philippines. Currently a data science intern at OpsWerks.</p>
         </div>
         <div class="footer-col">
           <h4>Site</h4>
@@ -400,7 +400,7 @@ function siteFooter(depth) {
         </div>
         <div class="footer-col">
           <h4>Elsewhere</h4>
-          <ul><li><a href="https://github.com/fitaness12345" target="_blank" rel="noopener">GitHub</a></li><li><a href="mailto:lbaliber0828@gmail.com">Email</a></li><li><a href="${p}contact.html">LinkedIn / Scholar / ORCID</a></li></ul>
+          <ul><li><a href="https://github.com/loubaliber" target="_blank" rel="noopener">GitHub</a></li><li><a href="mailto:lbaliber0828@gmail.com">Email</a></li><li><a href="${p}contact.html">LinkedIn / Scholar / ORCID</a></li></ul>
         </div>
       </div>
       <div class="footer-bottom">

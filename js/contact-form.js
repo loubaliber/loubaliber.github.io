@@ -3,8 +3,13 @@
  * Client-side validation + a clearly-labeled "not wired to a backend yet"
  * status message. No form-processing service is configured in this build,
  * so submitting does not send an email — the status area says so and
- * offers the mailto fallback. Swap FORM_ENDPOINT to a real endpoint
- * (Formspree, Getform, a serverless function, etc.) to go live.
+ * offers the mailto fallback.
+ *
+ * To go live with Formspree:
+ *   1. Create a form at https://formspree.io and confirm the email it sends.
+ *   2. Copy the endpoint it gives you (looks like https://formspree.io/f/abcdwxyz).
+ *   3. Paste it into FORM_ENDPOINT below — no other change is needed; the submit
+ *      handler already POSTs JSON there and reports success/failure in #form-status.
  */
 (function () {
   'use strict';

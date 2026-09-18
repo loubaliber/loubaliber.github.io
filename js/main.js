@@ -143,6 +143,12 @@
     { label: 'Stroke Detection System', hint: 'Project — end-to-end ML pipeline', href: 'projects.html#stroke-detection' },
     { label: 'Satellite Launch & Orbit Simulator', hint: 'Project — orbital mechanics', href: 'projects.html#satellite-simulator' },
     { label: 'Balibot', hint: 'Project — Discord bot', href: 'projects.html#balibot' },
+    { label: 'Coarse-Grained Polymer Simulation', hint: 'Project — LAMMPS molecular dynamics', href: 'projects.html#cg-polymer-md' },
+    { label: 'Signal Translator', hint: 'Project — audio fingerprinting (FFT & MFCC)', href: 'projects.html#signal-translator' },
+    { label: 'Hands Detection Music', hint: 'Project — real-time computer vision instrument', href: 'projects.html#hands-detection-music' },
+    { label: 'Climate Delhi', hint: 'Project — time-series EDA & regression', href: 'projects.html#climate-delhi' },
+    { label: 'latex-hub.nvim', hint: 'Project — Neovim plugin for LaTeX', href: 'projects.html#latex-hub-nvim' },
+    { label: 'Gmail Scraper', hint: 'Project — Python/IMAP mailbox archiver', href: 'projects.html#gmail-scraper' },
     { label: 'GitHub', hint: 'github.com/loubaliber', href: 'https://github.com/loubaliber' },
   ];
 
