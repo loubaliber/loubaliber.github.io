@@ -12,7 +12,7 @@ const BLOG_INDEX_FILE = path.join(ROOT, 'blog.html');
 const RSS_FILE = path.join(ROOT, 'feed.xml');
 const SITE_URL = 'https://loubaliber.github.io'; // update once the real domain is live
 const SITE_TITLE = 'Lourenz Baliber — Blog';
-const SITE_DESC = 'Notes on machine learning, biophysics, and scientific computing.';
+const SITE_DESC = 'Notes on physics, machine learning, and code.';
 const WORDS_PER_MINUTE = 200;
 
 function escapeHtml(str) {
@@ -466,6 +466,8 @@ function renderPostPage(post, prevPost, nextPost) {
   <meta property="og:title" content="${escapeHtml(post.title)}" />
   <meta property="og:description" content="${escapeHtml(post.excerpt)}" />
   <meta property="og:url" content="${SITE_URL}/blog/${post.slug}.html" />
+  <meta property="og:image" content="${SITE_URL}/images/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="../manifest.webmanifest" />
   <meta name="theme-color" content="#0a0e13" />
@@ -606,7 +608,10 @@ function renderBlogIndex(posts) {
   <link rel="alternate" type="application/rss+xml" title="${escapeHtml(SITE_TITLE)}" href="feed.xml" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Blog — Lourenz Baliber" />
+  <meta property="og:description" content="${escapeHtml(SITE_DESC)}" />
   <meta property="og:url" content="${SITE_URL}/blog.html" />
+  <meta property="og:image" content="${SITE_URL}/images/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="manifest.webmanifest" />
   <meta name="theme-color" content="#0a0e13" />

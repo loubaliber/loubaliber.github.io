@@ -59,6 +59,20 @@
   background: var(--bg-elevated);
 }
 
+.project-full-media img,
+.project-full-media video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+}
+
+.project-full-media.media-contain img,
+.project-full-media.media-contain video {
+  object-fit: contain;
+}
+
 .project-full-body h2 {
   font-size: var(--fs-lg);
   margin: var(--space-2) 0 var(--space-4);

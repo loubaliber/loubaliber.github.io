@@ -149,6 +149,10 @@
     { label: 'Climate Delhi', hint: 'Project — time-series EDA & regression', href: 'projects.html#climate-delhi' },
     { label: 'latex-hub.nvim', hint: 'Project — Neovim plugin for LaTeX', href: 'projects.html#latex-hub-nvim' },
     { label: 'Gmail Scraper', hint: 'Project — Python/IMAP mailbox archiver', href: 'projects.html#gmail-scraper' },
+    { label: 'bisaya-llm', hint: 'Project — Cebuano dataset & LLM fine-tune', href: 'projects.html#bisaya-llm' },
+    { label: 'Contact Center Forecast', hint: 'Project — call-volume forecast & Erlang C staffing', href: 'projects.html#contact-center-forecast' },
+    { label: 'Kaggriculture', hint: 'Project — Kaggle competition notebooks', href: 'projects.html#kaggriculture' },
+    { label: 'Treasure Quest', hint: 'Project — C++20 game for reverse engineering', href: 'projects.html#treasure-quest' },
     { label: 'GitHub', hint: 'github.com/loubaliber', href: 'https://github.com/loubaliber' },
   ];
 

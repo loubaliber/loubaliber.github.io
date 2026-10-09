@@ -5,6 +5,14 @@
 (function () {
   'use strict';
 
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.project-full-media video').forEach((video) => {
+      video.removeAttribute('autoplay');
+      video.pause();
+      video.controls = true;
+    });
+  }
+
   const buttons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.project-full');
   if (!buttons.length || !cards.length) return;
