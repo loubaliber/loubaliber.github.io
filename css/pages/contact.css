@@ -44,20 +44,6 @@
   font-size: var(--fs-xs);
 }
 
-.channel-pending {
-  opacity: 0.55;
-  cursor: default;
-}
-
-.channel-pending:hover {
-  transform: none;
-  border-color: var(--border);
-}
-
-.channel-pending svg {
-  color: var(--text-tertiary);
-}
-
 .contact-form {
   padding: var(--space-7);
 }
