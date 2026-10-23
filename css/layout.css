@@ -32,11 +32,9 @@
   white-space: nowrap;
 }
 
-.nav-brand .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--accent);
+.nav-brand .brand-mark {
+  width: 1.4em;
+  height: 1.4em;
   flex-shrink: 0;
 }
 
