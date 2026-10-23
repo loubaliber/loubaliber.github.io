@@ -182,6 +182,11 @@
   margin-bottom: var(--space-7);
 }
 
+.footer-brand .brand-mark {
+  width: 2em;
+  height: 2em;
+}
+
 .footer-brand p {
   color: var(--text-secondary);
   font-size: var(--fs-sm);
@@ -306,27 +311,17 @@
 }
 
 .loader-mark {
-  position: relative;
-  width: 120px;
-  height: 2px;
-  background: var(--border);
-  overflow: hidden;
+  width: 48px;
+  height: 56px;
+  color: var(--text-primary);
+  animation: loader-pulse 1100ms var(--ease) infinite alternate;
 }
 
-.loader-mark::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  width: 40%;
-  background: var(--accent);
-  animation: loader-slide 900ms var(--ease) infinite;
-}
-
-@keyframes loader-slide {
+@keyframes loader-pulse {
   from {
-    transform: translateX(-100%);
+    opacity: 0.35;
   }
   to {
-    transform: translateX(250%);
+    opacity: 1;
   }
 }

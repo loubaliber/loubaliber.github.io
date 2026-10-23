@@ -29,6 +29,20 @@
   position: relative;
 }
 
+/* oversized LB mark, faint, behind the hero text */
+.hero-watermark {
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  height: 80%;
+  width: auto;
+  aspect-ratio: 18 / 21;
+  transform: translateY(-50%);
+  color: var(--text-primary);
+  opacity: 0.06;
+  pointer-events: none;
+}
+
 .hero-inner {
   max-width: 760px;
 }

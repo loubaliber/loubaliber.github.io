@@ -231,3 +231,12 @@
     align-items: flex-start;
   }
 }
+
+/* end-of-article LB mark */
+.post-end-mark {
+  display: block;
+  width: 22px;
+  height: 26px;
+  margin: var(--space-7) auto 0;
+  color: var(--text-tertiary);
+}
