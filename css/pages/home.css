@@ -104,6 +104,14 @@
   background: var(--bg);
 }
 
+.project-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+}
+
 .project-card h3 {
   font-size: var(--fs-md);
   margin: var(--space-2) 0 var(--space-3);
