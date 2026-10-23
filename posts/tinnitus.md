@@ -1,7 +1,7 @@
 ---
 title: Tinnitus
 date: 2019-09-16
-tag: "2019"
+tag: Poetry
 type: Poem
 source: The Diarist Projects
 excerpt: "How can silence be so loud? Despair and the hollowness of my soul is breaking me."

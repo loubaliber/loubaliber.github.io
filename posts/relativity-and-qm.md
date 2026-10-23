@@ -1,7 +1,7 @@
 ---
 title: On the Incompatibility of Theory of Relativity and Quantum Mechanics
 date: 2026-08-03
-tag: Meta
+tag: Physics
 type: Note
 excerpt: This complete unification of the forces also known as “The Theory of Everything" challenged physicist up until this very day. But, how do these forces really coexist?
 ---

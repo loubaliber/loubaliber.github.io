@@ -1,7 +1,7 @@
 ---
 title: Welcome to the blog
 date: 2026-03-15
-tag: Meta
+tag: Site
 type: Note
 excerpt: How this site handles posts — write in Markdown, run one command, and publish.
 ---
