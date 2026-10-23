@@ -23,7 +23,7 @@
 
 .post-layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: var(--space-7);
   align-items: start;
   padding-top: var(--space-7);
@@ -214,7 +214,7 @@
 
 @media (max-width: 860px) {
   .post-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .post-toc {
     position: static;

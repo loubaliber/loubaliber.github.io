@@ -1,41 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <!-- Link-preview cover. Same two-channel fluorescence palette as css/variables.css:
-       near-black field (#0a0e13), FITC-green tracer (#c7ff4d), cyan second channel (#4dd9ff). -->
+  <!-- Link-preview cover. Same lab-notebook palette as css/variables.css:
+       paper (#faf9f6), ink (#1a1a1a), notebook green (#2f6b4f). -->
   <defs>
-    <radialGradient id="glow" cx="78%" cy="30%" r="55%">
-      <stop offset="0%" stop-color="#c7ff4d" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#0a0e13" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M60 0H0V60" fill="none" stroke="#212a34" stroke-width="1"/>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#e4e1da" stroke-width="1"/>
     </pattern>
   </defs>
 
-  <rect width="1200" height="630" fill="#0a0e13"/>
-  <rect width="1200" height="630" fill="url(#grid)" opacity="0.5"/>
-  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="#faf9f6"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.7"/>
 
-  <!-- tracer trajectory: Brownian walk of a labeled particle -->
-  <path d="M735 470 L772 432 L751 392 L800 366 L848 386 L866 338 L916 318 L898 268 L945 238 L1002 254 L1030 208"
-        fill="none" stroke="#4dd9ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
-  <circle cx="735" cy="470" r="7" fill="#4dd9ff" opacity="0.5"/>
-  <circle cx="1030" cy="208" r="13" fill="#c7ff4d"/>
-  <circle cx="1030" cy="208" r="30" fill="none" stroke="#c7ff4d" stroke-width="2" opacity="0.45"/>
-  <circle cx="1030" cy="208" r="52" fill="none" stroke="#c7ff4d" stroke-width="1.5" opacity="0.18"/>
+  <!-- LB monogram (same drawing as images/favicon.svg, scaled) -->
+  <g transform="translate(860 150) scale(10)">
+    <rect width="32" height="32" rx="6" fill="#faf9f6" stroke="#e4e1da" stroke-width="0.12"/>
+    <g fill="#1a1a1a">
+      <rect x="7" y="6" width="3.4" height="18.2"/>
+      <rect x="5.4" y="6" width="6.6" height="1"/>
+      <rect x="5.4" y="23.4" width="13" height="0.9"/>
+      <rect x="14.6" y="12.2" width="3.2" height="12.1"/>
+    </g>
+    <path d="M15.2 13 H20.4 A2.75 2.75 0 0 1 20.4 18.5 H16.6 M16.6 18.5 H21 A2.95 2.95 0 0 1 21 24.4 H15.2" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
+    <circle cx="16.2" cy="18.5" r="1.8" fill="#2f6b4f"/>
+  </g>
 
-  <!-- accent rule -->
-  <rect x="96" y="176" width="72" height="5" rx="2.5" fill="#c7ff4d"/>
-
-  <text x="96" y="152" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" letter-spacing="4"
-        fill="#9fadba">CEBU CITY, PHILIPPINES</text>
-  <text x="96" y="286" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="92" font-weight="700"
-        fill="#e9eef3">Lourenz Baliber</text>
-  <text x="96" y="352" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="38" font-weight="500"
-        fill="#c7ff4d">Biophysics Researcher · Data Scientist</text>
-  <text x="96" y="424" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27"
-        fill="#9fadba">Particle-tracking microrheology, ML pipelines,</text>
-  <text x="96" y="462" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27"
-        fill="#9fadba">and scientific computing.</text>
-  <text x="96" y="546" font-family="Menlo, Consolas, monospace" font-size="24"
-        fill="#647180">loubaliber.github.io</text>
+  <text x="96" y="168" font-family="Menlo, Consolas, monospace" font-size="22" letter-spacing="3"
+        fill="#8a867e">CEBU CITY, PHILIPPINES</text>
+  <rect x="96" y="196" width="64" height="3" fill="#2f6b4f"/>
+  <text x="96" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="88"
+        fill="#1a1a1a">Lourenz Baliber</text>
+  <text x="96" y="364" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-style="italic"
+        fill="#2f6b4f">Biophysics researcher · Data scientist</text>
+  <text x="96" y="430" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26"
+        fill="#55524c">Particle-tracking microrheology, ML pipelines,</text>
+  <text x="96" y="466" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26"
+        fill="#55524c">and scientific computing.</text>
+  <text x="96" y="546" font-family="Menlo, Consolas, monospace" font-size="22"
+        fill="#8a867e">loubaliber.github.io</text>
 </svg>

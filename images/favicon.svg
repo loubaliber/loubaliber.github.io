@@ -1,5 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="7" fill="#0a0e13"/>
-  <path d="M6 22 C 10 16 9 10 15 12 S 20 6 17 4" stroke="#4dd9ff" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.55"/>
-  <circle cx="16" cy="16" r="4.5" fill="#c7ff4d"/>
+  <!-- LB monogram, redrawn from the Canva mark in images/brand/logo-canva.png -->
+  <rect width="32" height="32" rx="6" fill="#faf9f6"/>
+  <g fill="#1a1a1a">
+    <rect x="7" y="6" width="3.4" height="18.2"/>
+    <rect x="5.4" y="6" width="6.6" height="1"/>
+    <rect x="5.4" y="23.4" width="13" height="0.9"/>
+    <rect x="14.6" y="12.2" width="3.2" height="12.1"/>
+  </g>
+  <path d="M15.2 13 H20.4 A2.75 2.75 0 0 1 20.4 18.5 H16.6 M16.6 18.5 H21 A2.95 2.95 0 0 1 21 24.4 H15.2" fill="none" stroke="#1a1a1a" stroke-width="1.9"/>
+  <circle cx="16.2" cy="18.5" r="1.8" fill="#2f6b4f"/>
 </svg>

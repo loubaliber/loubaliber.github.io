@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
   <defs>
     <style>
-      .cvr-bg { fill: #10161d; }
-      .cvr-grid { stroke: #212a34; stroke-width: 1; }
-      .cvr-a { stroke: #c7ff4d; fill: none; stroke-width: 1.6; stroke-linecap: round; }
-      .cvr-a-fill { fill: #c7ff4d; }
-      .cvr-b { stroke: #4dd9ff; fill: none; stroke-width: 1.6; stroke-linecap: round; }
-      .cvr-b-fill { fill: #4dd9ff; }
-      .cvr-dim { stroke: #2e3a46; fill: none; stroke-width: 1; }
+      .cvr-bg { fill: #f2f0eb; }
+      .cvr-grid { stroke: #e4e1da; stroke-width: 1; }
+      .cvr-a { stroke: #2f6b4f; fill: none; stroke-width: 1.6; stroke-linecap: round; }
+      .cvr-a-fill { fill: #2f6b4f; }
+      .cvr-b { stroke: #3b5b7a; fill: none; stroke-width: 1.6; stroke-linecap: round; }
+      .cvr-b-fill { fill: #3b5b7a; }
+      .cvr-dim { stroke: #cfcac0; fill: none; stroke-width: 1; }
     </style>
   </defs>
 

@@ -9,23 +9,23 @@
   const root = document.documentElement;
 
   /* ---------------------------------------------------------------------
-   * Theme (dark default, persisted)
+   * Theme (paper default, persisted)
    * ------------------------------------------------------------------- */
   function initTheme() {
     const saved = localStorage.getItem(THEME_KEY);
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-    const initial = saved || (prefersLight ? 'light' : 'dark');
-    if (initial === 'light') root.setAttribute('data-theme', 'light');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initial = saved || (prefersDark ? 'dark' : 'light');
+    if (initial === 'dark') root.setAttribute('data-theme', 'dark');
 
     document.querySelectorAll('[data-theme-toggle]').forEach((btn) => {
       btn.addEventListener('click', () => {
-        const isLight = root.getAttribute('data-theme') === 'light';
-        if (isLight) {
+        const isDark = root.getAttribute('data-theme') === 'dark';
+        if (isDark) {
           root.removeAttribute('data-theme');
-          localStorage.setItem(THEME_KEY, 'dark');
-        } else {
-          root.setAttribute('data-theme', 'light');
           localStorage.setItem(THEME_KEY, 'light');
+        } else {
+          root.setAttribute('data-theme', 'dark');
+          localStorage.setItem(THEME_KEY, 'dark');
         }
       });
     });

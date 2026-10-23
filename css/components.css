@@ -28,14 +28,13 @@
 }
 
 .btn-primary:hover {
-  background: var(--text-primary);
+  background: var(--accent-dim);
 }
 
 .btn-ghost {
   border-color: var(--border-strong);
   color: var(--text-primary);
-  background: color-mix(in srgb, var(--bg-elevated) 60%, transparent);
-  backdrop-filter: blur(8px);
+  background: transparent;
 }
 
 .btn-ghost:hover {
@@ -53,12 +52,10 @@
   height: 15px;
 }
 
-/* ---- Glass panel ---- */
+/* ---- Panel (flat; class name kept from the old glass look) ---- */
 .glass-panel {
-  background: color-mix(in srgb, var(--bg-elevated) 70%, transparent);
+  background: var(--bg-elevated);
   border: 1px solid var(--border);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
   border-radius: var(--radius-md);
 }
 
@@ -101,8 +98,8 @@
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
   padding: var(--space-1) var(--space-3);
-  border: 1px solid var(--border-strong);
-  border-radius: 999px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
   color: var(--text-secondary);
 }
 
@@ -327,8 +324,7 @@
 .cmdk-overlay {
   position: fixed;
   inset: 0;
-  background: color-mix(in srgb, var(--bg) 55%, transparent);
-  backdrop-filter: blur(4px);
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
   z-index: 300;
   display: none;
   align-items: flex-start;
@@ -349,7 +345,6 @@
   background: var(--bg-elevated);
   border: 1px solid var(--border-strong);
   border-radius: var(--radius-md);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   margin: 0 var(--space-5);
 }

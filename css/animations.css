@@ -1,10 +1,10 @@
 /* ==========================================================================
-   Animations — used sparingly: fade/slide reveal on scroll, hover lift
+   Animations — used sparingly: fade/slide reveal on scroll
    ========================================================================== */
 
 [data-reveal] {
   opacity: 0;
-  transform: translateY(14px);
+  transform: translateY(6px);
   transition: opacity var(--dur-slow) var(--ease), transform var(--dur-slow) var(--ease);
 }
 
@@ -15,7 +15,7 @@
 
 [data-reveal-group] > * {
   opacity: 0;
-  transform: translateY(14px);
+  transform: translateY(6px);
   transition: opacity var(--dur-slow) var(--ease), transform var(--dur-slow) var(--ease);
 }
 
@@ -31,12 +31,9 @@
 [data-reveal-group].is-visible > *:nth-child(5) { transition-delay: 240ms; }
 [data-reveal-group].is-visible > *:nth-child(6) { transition-delay: 300ms; }
 
-.hover-lift {
-  transition: transform var(--dur-base) var(--ease);
-}
-
+/* hover-lift: no movement in the flat look; .card:hover handles the border */
 .hover-lift:hover {
-  transform: translateY(-4px);
+  border-color: var(--accent);
 }
 
 .blink-cursor::after {
