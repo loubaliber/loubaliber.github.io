@@ -29,6 +29,11 @@
   padding-top: var(--space-7);
 }
 
+/* Posts without h2/h3 render no TOC; give the body the full width */
+.post-layout:not(:has(.post-toc)) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .post-toc {
   position: sticky;
   top: calc(var(--nav-h) + var(--space-5));
@@ -160,6 +165,35 @@
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   margin: var(--space-6) 0;
+}
+
+/* Gallery: a paragraph made only of linked images */
+.post-body p:has(> a > img) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 40%), 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+
+.post-body p:has(> a > img) a {
+  display: block;
+  border-radius: var(--radius-md);
+  transition: outline-color 0.2s ease;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.post-body p:has(> a > img) a:hover,
+.post-body p:has(> a > img) a:focus-visible {
+  outline-color: var(--accent);
+}
+
+.post-body p:has(> a > img) img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin: 0;
 }
 
 .post-body hr {

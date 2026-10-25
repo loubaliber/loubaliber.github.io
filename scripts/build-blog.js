@@ -99,7 +99,8 @@ function formatInline(text) {
 
   // 5. Italic *text* / _text_
   text = text.replace(/\*([^*]+)\*/g, '<em>$1</em>');
-  text = text.replace(/_([^_]+)_/g, '<em>$1</em>');
+  // Word-bounded so target="_blank" and snake_case are left alone
+  text = text.replace(/(^|[^\w])_([^_]+)_(?!\w)/g, '$1<em>$2</em>');
 
   // 6. Restore code spans
   text = text.replace(/\u0000CODE(\d+)\u0000/g, (_, i) => `<code>${codeStash[Number(i)]}</code>`);
@@ -645,7 +646,7 @@ function renderBlogIndex(posts) {
       <div class="container">
         <p class="eyebrow" data-reveal>Blog</p>
         <h1 data-reveal>Notes on ML, biophysics, and scientific computing.</h1>
-        <p class="page-lede" data-reveal>Written in Markdown, built with <code class="mono">scripts/build-blog.js</code>. <a href="feed.xml">RSS feed</a>.</p>
+        <p class="page-lede" data-reveal>Written in Markdown, built with <code class="mono">scripts/build-blog.js</code>. <a href="feed.xml">RSS feed</a>. Illustrations on <a href="https://dribbble.com/fitaness12345" target="_blank" rel="noopener">Dribbble ↗</a>.</p>
 
         <div class="blog-controls" data-reveal>
           <div class="search-field">
