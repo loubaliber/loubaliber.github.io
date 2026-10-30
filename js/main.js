@@ -134,6 +134,7 @@
     { label: 'Home', hint: 'Overview & hero', href: 'index.html' },
     { label: 'Services', hint: 'Contact-center forecasting & staffing', href: 'services.html' },
     { label: 'Forecasting case study', hint: 'Year-ahead forecast and staffing plan', href: 'case-study-forecasting.html' },
+    { label: 'Students', hint: 'Research support and tutoring', href: 'students.html' },
     { label: 'Research support', hint: 'Thesis help for PH students: methods, statistics, editing', href: 'research-support.html' },
     { label: 'Tutoring', hint: 'Physics, calculus, linear algebra, DiffEq', href: 'tutoring.html' },
     { label: 'About', hint: 'Bio, timeline, skills', href: 'about.html' },

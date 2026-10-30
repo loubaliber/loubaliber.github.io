@@ -204,6 +204,13 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.student-price {
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--accent);
+}
+
 .subjects-more {
   margin-top: var(--space-5);
 }
