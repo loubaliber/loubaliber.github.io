@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case study: forecasting a shrinking support team — Lourenz Baliber</title>
+  <meta name="description" content="How a support team got a tested year-ahead forecast and staffing plan." />
+  <link rel="canonical" href="https://loubaliber.github.io/case-study-forecasting.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Case study: forecasting a shrinking support team — Lourenz Baliber" />
+  <meta property="og:url" content="https://loubaliber.github.io/case-study-forecasting.html" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#faf9f6" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/inner.css" />
+  <link rel="stylesheet" href="css/pages/research.css" />
+  <link rel="stylesheet" href="css/pages/services.css" />
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true"><svg class="loader-mark" viewBox="5 5 18 21" aria-hidden="true"><g fill="currentColor"><rect x="7" y="6" width="3.4" height="18.2"/><rect x="5.4" y="6" width="6.6" height="1"/><rect x="5.4" y="23.4" width="13" height="0.9"/><rect x="14.6" y="12.2" width="3.2" height="12.1"/></g><path d="M15.2 13 H20.4 A2.75 2.75 0 0 1 20.4 18.5 H16.6 M16.6 18.5 H21 A2.95 2.95 0 0 1 21 24.4 H15.2" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="16.2" cy="18.5" r="1.8" fill="var(--accent)"/></svg></div>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand"><svg class="brand-mark" viewBox="5 5 18 21" aria-hidden="true"><g fill="currentColor"><rect x="7" y="6" width="3.4" height="18.2"/><rect x="5.4" y="6" width="6.6" height="1"/><rect x="5.4" y="23.4" width="13" height="0.9"/><rect x="14.6" y="12.2" width="3.2" height="12.1"/></g><path d="M15.2 13 H20.4 A2.75 2.75 0 0 1 20.4 18.5 H16.6 M16.6 18.5 H21 A2.95 2.95 0 0 1 21 24.4 H15.2" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="16.2" cy="18.5" r="1.8" fill="var(--accent)"/></svg>L. Baliber</a>
+      <button class="nav-toggle icon-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="search-trigger" data-cmdk-open aria-label="Open search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span><kbd>⌘K</kbd>
+        </button>
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <a class="nav-cta" href="assets/Baliber_Resume.pdf" download>Résumé</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Case study · client details withheld</p>
+        <h1 data-reveal>Planning staff for a support team whose volume was falling.</h1>
+        <p class="page-lede" data-reveal>
+          A consumer retail support team needed a year-ahead contact forecast and a staffing plan.
+          Figures and charts are indexed and altered to protect the client; no real volumes, dates
+          or names are shown.
+        </p>
+      </div>
+    </section>
+
+    <section class="current-work">
+      <div class="container two-col" data-reveal>
+        <div>
+          <p class="eyebrow">The problem</p>
+          <h2>Last year's numbers no longer fit.</h2>
+          <p class="text-secondary">
+            Weekly contacts had been falling steadily for two years, with a sharp surge every
+            holiday season. Staffing from last year's numbers meant paying for agents the work no
+            longer needed, and still being caught short in December.
+          </p>
+          <figure class="services-figure">
+            <img class="chart-light" src="images/case-study/history.png" alt="Weekly contacts falling steadily over two years, with a surge every November to January" loading="lazy" />
+            <img class="chart-dark" src="images/case-study/history-dark.png" alt="" aria-hidden="true" loading="lazy" />
+          </figure>
+        </div>
+        <div class="glass-panel services-stats">
+          <p class="eyebrow">At a glance</p>
+          <p class="stat-big">5 in 6</p>
+          <p class="text-secondary">normal weeks within 10%, one week ahead</p>
+          <p class="stat-big">About 1 in 3</p>
+          <p class="text-secondary">at eight weeks ahead, so the plan is reissued monthly</p>
+          <p class="stat-big">2–3×</p>
+          <p class="text-secondary">baseline capacity for the holiday peak</p>
+        </div>
+      </div>
+    </section>
+
+    <svg class="trajectory-divider" viewBox="0 0 1180 32" preserveAspectRatio="none" aria-hidden="true"><path d="M0,16 C 200,4 300,28 500,16 S 800,4 1180,16" /><circle cx="500" cy="16" r="3"/></svg>
+
+    <section class="methods">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">What I did</p>
+          <h2>Measure first, then forecast.</h2>
+        </div>
+        <div class="method-grid" data-reveal-group>
+          <div class="method-row"><span class="method-index">01</span><div><h3>Checked the data before trusting it</h3><p class="text-secondary">Two-plus years of weekly counts, checked for gaps and for channels adding up to totals. One feed started partway through, so it was treated as a break, not as growth.</p></div></div>
+          <div class="method-row"><span class="method-index">02</span><div><h3>Chose the model by backtest only</h3><p class="text-secondary">Several methods, from a naive forecast to Holt-Winters, each refit every week and scored only on weeks it had not seen, from many starting points. Damped Holt was chosen.</p></div></div>
+          <div class="method-row"><span class="method-index">03</span><div><h3>Tested a tempting shortcut and dropped it</h3><p class="text-secondary">Using sales as a predictor looked better on past data but made forecasts for unseen weeks noticeably worse.</p></div></div>
+          <div class="method-row"><span class="method-index">04</span><div><h3>Gave ranges, not one line</h3><p class="text-secondary">Simulated paths give an 80% range for every week, plus a flex level to hold in reserve for events.</p></div></div>
+          <div class="method-row"><span class="method-index">05</span><div><h3>Turned contacts into agents</h3><p class="text-secondary">Every forecast week became a number of agents. The holiday peak needs about twice the agents of an average week, planned as a flexible pool.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-proof">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Results</p>
+          <h2>Including the limits.</h2>
+        </div>
+        <div class="case-figures" data-reveal-group>
+          <figure class="services-figure">
+            <img class="chart-light" src="images/case-study/backtest.png" alt="Backtest: forecast made the week before, against actual contacts" loading="lazy" />
+            <img class="chart-dark" src="images/case-study/backtest-dark.png" alt="" aria-hidden="true" loading="lazy" />
+            <figcaption class="text-secondary">Each week forecast using only the weeks before it.</figcaption>
+          </figure>
+          <figure class="services-figure">
+            <img class="chart-light" src="images/case-study/forecast.png" alt="Year-ahead forecast with an 80% range and a flex capacity line" loading="lazy" />
+            <img class="chart-dark" src="images/case-study/forecast-dark.png" alt="" aria-hidden="true" loading="lazy" />
+            <figcaption class="text-secondary">Year ahead: a forecast, an 80% range and a flex level.</figcaption>
+          </figure>
+        </div>
+        <ul class="case-list text-secondary" data-reveal>
+          <li>One week ahead, the forecast was within 10% in about five of every six normal weeks. Eight weeks ahead, about one in three.</li>
+          <li>For the full year, the total landed within a wide band across test starting points. The year figure is for budgeting, not for rostering.</li>
+          <li>Holiday weeks are the hardest to call, so the plan keeps a range of 2 to 3 times baseline with flexible capacity rather than a single number.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="blog-teaser">
+      <div class="container">
+        <div class="glass-panel services-cta" data-reveal>
+          <div>
+            <p class="eyebrow">Your turn</p>
+            <h2>Want the same check on your forecast?</h2>
+            <p class="text-secondary">Send 12 months or more of weekly contact volume under NDA. Within two weeks I'll show how your current forecast would have performed, and the staffing gap. Free. <a href="assets/Baliber_Forecasting_Case_Study.pdf" download>Download this case study (PDF)</a>.</p>
+          </div>
+          <a class="btn btn-primary" href="contact.html">Get a free backtest</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-brand"><svg class="brand-mark" viewBox="5 5 18 21" aria-hidden="true"><g fill="currentColor"><rect x="7" y="6" width="3.4" height="18.2"/><rect x="5.4" y="6" width="6.6" height="1"/><rect x="5.4" y="23.4" width="13" height="0.9"/><rect x="14.6" y="12.2" width="3.2" height="12.1"/></g><path d="M15.2 13 H20.4 A2.75 2.75 0 0 1 20.4 18.5 H16.6 M16.6 18.5 H21 A2.95 2.95 0 0 1 21 24.4 H15.2" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="16.2" cy="18.5" r="1.8" fill="var(--accent)"/></svg>L. Baliber</a>
+          <p>Biophysics researcher and data scientist based in Cebu City, Philippines.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <ul><li><a href="experience.html">Experience</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="assets/Baliber_Resume.pdf" download>Résumé (PDF)</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Elsewhere</h4>
+          <ul><li><a href="https://github.com/loubaliber" target="_blank" rel="noopener">GitHub</a></li><li><a href="mailto:lbaliber0828@gmail.com">Email</a></li><li><a href="contact.html">LinkedIn / Scholar / ORCID</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Lourenz O. Baliber. Built with HTML, CSS &amp; vanilla JS.</span>
+        <span>Cebu City, Philippines</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <div class="cmdk-overlay" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="cmdk-panel">
+      <div class="cmdk-input-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search pages, projects…" aria-label="Search" />
+        <kbd>Esc</kbd>
+      </div>
+      <div class="cmdk-list" role="listbox"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

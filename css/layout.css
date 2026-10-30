@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-5);
+  gap: var(--space-4);
 }
 
 .nav-brand {
@@ -41,7 +41,7 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-5);
   flex: 1;
   justify-content: center;
 }
@@ -130,7 +130,18 @@
   color: var(--accent);
 }
 
-@media (max-width: 940px) {
+/* 9 links + actions only fit on wide screens; tighten, then collapse. */
+@media (max-width: 1340px) {
+  .nav-links {
+    gap: var(--space-4);
+  }
+
+  .search-trigger span {
+    display: none;
+  }
+}
+
+@media (max-width: 1180px) {
   .nav-links {
     position: fixed;
     inset: var(--nav-h) 0 0 0;
@@ -163,8 +174,14 @@
     display: none;
   }
 
+  .nav-actions {
+    order: 1;
+    margin-left: auto;
+  }
+
   .nav-toggle {
     display: inline-flex;
+    order: 2;
   }
 }
 

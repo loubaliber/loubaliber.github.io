@@ -132,6 +132,8 @@
    * ------------------------------------------------------------------- */
   const SITE_INDEX = [
     { label: 'Home', hint: 'Overview & hero', href: 'index.html' },
+    { label: 'Services', hint: 'Contact-center forecasting & staffing', href: 'services.html' },
+    { label: 'Forecasting case study', hint: 'Year-ahead forecast and staffing plan', href: 'case-study-forecasting.html' },
     { label: 'About', hint: 'Bio, timeline, skills', href: 'about.html' },
     { label: 'Projects', hint: 'Applied ML & simulation work', href: 'projects.html' },
     { label: 'Experience', hint: 'Research roles & timeline', href: 'experience.html' },

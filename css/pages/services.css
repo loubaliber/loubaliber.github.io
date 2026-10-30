@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Services and case-study pages
+   (grids, two-col and method rows come from research.css)
+   ========================================================================== */
+
+.services-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+/* Mono step label shared by offer and price cards */
+.offer-step {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+
+.offer-card h3 {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-2);
+}
+
+.offer-card p,
+.price-card p.text-secondary {
+  line-height: var(--lh-normal);
+}
+
+/* Charts are transparent PNGs drawn in both palettes; frame them like a card */
+.services-figure {
+  margin: var(--space-5) 0 0;
+}
+
+.services-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: var(--space-3);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.services-figure .chart-dark,
+[data-theme='dark'] .services-figure .chart-light {
+  display: none;
+}
+
+[data-theme='dark'] .services-figure .chart-dark {
+  display: block;
+}
+
+.services-figure figcaption {
+  font-size: var(--fs-sm);
+  margin-top: var(--space-2);
+}
+
+.services-stats {
+  padding: var(--space-6);
+}
+
+.services-stats .stat-big {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  line-height: 1.1;
+  color: var(--accent);
+  margin: var(--space-4) 0 var(--space-1);
+}
+
+.services-stats .text-link {
+  display: inline-block;
+  margin-top: var(--space-5);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--accent);
+}
+
+.services-stats .text-link:hover {
+  text-decoration: underline;
+}
+
+.pricing-head {
+  margin-top: var(--space-8);
+}
+
+.pricing-grid {
+  align-items: stretch;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card .price {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.price-card .price small {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  color: var(--text-tertiary);
+}
+
+.price-card h3 {
+  font-size: var(--fs-base);
+  margin-bottom: var(--space-2);
+}
+
+.price-card--featured {
+  box-shadow: inset 0 3px 0 var(--accent);
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  max-width: 760px;
+}
+
+.faq details {
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-4) 0;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-primary);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: '+';
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--text-tertiary);
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.faq details[open] summary::after {
+  content: '−';
+}
+
+.faq summary:hover::after {
+  color: var(--accent);
+}
+
+.faq details p {
+  margin-top: var(--space-3);
+  line-height: var(--lh-normal);
+}
+
+.services-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  padding: var(--space-7);
+}
+
+.services-cta h2 {
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.case-figures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.case-list {
+  margin-top: var(--space-6);
+  padding-left: var(--space-5);
+  line-height: var(--lh-normal);
+  max-width: 760px;
+}
+
+.case-list li {
+  margin-bottom: var(--space-3);
+}
+
+@media (max-width: 860px) {
+  .case-figures {
+    grid-template-columns: 1fr;
+  }
+  .services-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-6);
+  }
+}

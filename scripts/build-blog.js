@@ -358,6 +358,7 @@ function siteNav(activeHref, depth) {
       </button>
       <nav class="nav-links" aria-label="Primary">
         ${link('index.html', 'Home')}
+        ${link('services.html', 'Services')}
         ${link('about.html', 'About')}
         ${link('projects.html', 'Projects')}
         ${link('experience.html', 'Experience')}
@@ -393,7 +394,7 @@ function siteFooter(depth) {
         </div>
         <div class="footer-col">
           <h4>Site</h4>
-          <ul><li><a href="${p}about.html">About</a></li><li><a href="${p}projects.html">Projects</a></li><li><a href="${p}research.html">Research</a></li><li><a href="${p}publications.html">Publications</a></li></ul>
+          <ul><li><a href="${p}services.html">Services</a></li><li><a href="${p}about.html">About</a></li><li><a href="${p}projects.html">Projects</a></li><li><a href="${p}research.html">Research</a></li><li><a href="${p}publications.html">Publications</a></li></ul>
         </div>
         <div class="footer-col">
           <h4>More</h4>
